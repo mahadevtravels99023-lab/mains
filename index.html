@@ -1,212 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Mahadev Book — sports entertainment landing page demo." />
-  <title>Mahadev Book | Play. Bet. Win.</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sports Scores</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="page-glow"></div>
+    <header>
+        <h1>Live Sports Scores</h1>
+    </header>
 
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Mahadev Book home">
-      <img class="header-logo" src="MDbook-header-clean.png" alt="Mahadev Book logo" />
-    </a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#matches">Live Matches</a>
-      <span></span>
-      <a href="#features">Secure</a>
-      <span></span>
-      <a href="#sports">Fast Payouts</a>
-    </nav>
-
-    <div class="header-actions">
-      <a href="https://mahadevonline.app" class="button-link"><button class="ghost-btn"
-          data-modal="login">Login</button></a>
-      <a href="https://mahadevonline.app" class="button-link"><button class="gold-btn small" data-modal="signup">Sign
-          Up</button></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#matches">Live Matches</a>
-    <a href="#features">Secure</a>
-    <a href="#sports">Fast Payouts</a>
-  </div>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <img class="hero-logo" src="MDbook-clean.png" alt="Mahadev Book logo" />
-
-        <h1>Play. <span>Bet.</span> Win.</h1>
-        <p>Your one-stop platform for real-time betting<br class="desktop-only" /> on your favorite sports and games.
-        </p>
-        <a href="https://mahadevonline.app" class="button-link"><button class="gold-btn hero-btn"
-            data-modal="signup">Get Started <b>→</b></button></a>
-
-        <div class="trust-grid" id="features">
-          <div class="trust-item">
-            <div class="trust-icon">♢</div><b>Secure &amp;<br />Trusted</b>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon">ϟ</div><b>Fast<br />Payouts</b>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon">24/7</div><b>24/7<br />Support</b>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon">★</div><b>Wide Range<br />of Games</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-label="Sports betting dashboard preview">
-        <div class="sport-collage">
-          <div class="sport-panel cricket"><span>🏏</span><b>CRICKET</b></div>
-          <div class="sport-panel football"><span>⚽</span><b>FOOTBALL</b></div>
-          <div class="sport-panel tennis"><span>🎾</span><b>TENNIS</b></div>
-          <div class="sport-panel horse"><span>🏇</span><b>HORSE RACING</b></div>
-        </div>
-
-        <div class="laptop">
-          <div class="screen">
-            <div class="dashboard-top">
-              <div class="mini-brand"><span>ॐ</span> MAHADEV <small>BOOK</small></div>
-              <div><a href="https://mahadevonline.app" class="button-link"><button class="dash-login"
-                    data-modal="login">Login</button></a><a href="https://mahadevonline.app" class="button-link"><button
-                    class="dash-signup" data-modal="signup">Sign Up</button></a></div>
+    <main class="container">
+        <section id="scores-section">
+            <h2>Live Matches</h2>
+            <div id="scores-container" class="scores-grid">
+                <!-- Live match cards will be rendered here dynamically -->
             </div>
-            <div class="dashboard-body">
-              <aside class="side-nav">
-                <a class="active">⌂ <span>Home</span></a>
-                <a>⚔ <span>Cricket</span></a>
-                <a>◉ <span>Football</span></a>
-                <a>◌ <span>Tennis</span></a>
-                <a>♞ <span>Horse Racing</span></a>
-                <a>◈ <span>Live Events</span></a>
-                <a>▤ <span>My Bets</span></a>
-                <a>▣ <span>Wallet</span></a>
-              </aside>
-              <section class="dash-main">
-                <div class="live-banner">
-                  <div>
-                    <small>LIVE</small>
-                    <strong>BETTING</strong>
-                    <span>ON REAL WORLD GAMES</span>
-                    <a href="https://mahadevonline.app" class="button-link"><button class="gold-btn tiny"
-                        data-modal="signup">Bet Now →</button></a>
-                  </div>
-                  <div class="banner-ball">🏏</div>
-                </div>
-                <div class="category-row">
-                  <button class="category active">🏏<span>Cricket</span></button>
-                  <button class="category">⚽<span>Football</span></button>
-                  <button class="category">🎾<span>Tennis</span></button>
-                  <button class="category">🏇<span>Horse Racing</span></button>
-                </div>
-                <div class="match-head"><strong>Live Matches</strong><a href="#matches">View All →</a></div>
-                <div class="match-list" id="dashboardMatches"></div>
-              </section>
-            </div>
-          </div>
-          <div class="laptop-base"></div>
-        </div>
+        </section>
+    </main>
 
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="phone-top"><span>9:41</span><span>⌁ ◒ ▰</span></div>
-            <div class="mini-brand">ॐ <b>MAHADEV</b><small>BOOK</small><button data-modal="login">Login</button></div>
-            <div class="phone-banner"><b>BET ON<br />LIVE CRICKET</b><a href="https://mahadevonline.app"
-                class="button-link"><button class="gold-btn tiny" data-modal="signup">Bet Now →</button></a></div>
-            <div class="phone-cats">
-              <span>🏏<small>Cricket</small></span><span>⚽<small>Football</small></span><span>🎾<small>Tennis</small></span><span>🏇<small>Horse</small></span>
-            </div>
-            <div class="phone-title">Live Matches <a href="#matches">View All →</a></div>
-            <div class="phone-matches" id="phoneMatches"></div>
-            <div class="phone-nav"><span class="selected">⌂<small>Home</small></span><span>▤<small>My
-                  Bets</small></span><span>▣<small>Wallet</small></span><span>☰<small>More</small></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sports-section" id="sports">
-      <div class="sports-grid">
-        <article class="sport-card">
-          <div class="sport-icon cricket-icon">🏏</div>
-          <h3>Cricket</h3>
-          <p>Live <i>|</i> Pre-match</p>
-        </article>
-        <article class="sport-card">
-          <div class="sport-icon football-icon">⚽</div>
-          <h3>Football</h3>
-          <p>Live <i>|</i> Pre-match</p>
-        </article>
-        <article class="sport-card">
-          <div class="sport-icon tennis-icon">🎾</div>
-          <h3>Tennis</h3>
-          <p>Live <i>|</i> Pre-match</p>
-        </article>
-        <article class="sport-card">
-          <div class="sport-icon horse-icon">🏇</div>
-          <h3>Horse Racing</h3>
-          <p>Live <i>|</i> Pre-match</p>
-        </article>
-      </div>
-      <div class="tagline"><img class="tagline-logo" src="MDbook-header-clean.png" alt="Mahadev Book logo" /><b>BIGGER
-          GAMES.<br />BIGGER EXCITEMENT.</b></div>
-    </section>
-
-    <section class="matches-section" id="matches">
-      <div class="section-heading">
-        <div><span>REAL-TIME SPORTS</span>
-          <h2>Live Matches</h2>
-        </div>
-        <button class="outline-btn" id="refreshBtn">↻ Refresh</button>
-      </div>
-      <div class="public-matches" id="publicMatches"></div>
-    </section>
-  </main>
-
-  <footer>
-    <span>© 2026 Mahadev Book — Main Page</span>
-    <span>Secure interface • Responsive design • Demo only</span>
-  </footer>
-
-
-  <a class="whatsapp-float" href="https://wa.me/919999999999?text=Hi" target="_blank" rel="noopener noreferrer"
-    aria-label="Get Started on WhatsApp">
-    <span class="whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 32 32">
-        <path
-          d="M16 3.5a12.45 12.45 0 0 0-10.7 18.8L3.5 28.5l6.4-1.7A12.5 12.5 0 1 0 16 3.5Zm0 22.7c-2 0-4-.6-5.7-1.8l-.4-.3-3.8 1 1-3.7-.3-.4A10.2 10.2 0 1 1 16 26.2Zm5.6-7.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.8-2.1-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" />
-      </svg></span>
-    <span>Get Started</span>
-  </a>
-
-  <div class="modal-backdrop" id="modalBackdrop">
-    <div class="modal" role="dialog" aria-modal="true">
-      <button class="modal-close" id="modalClose">×</button>
-      <div class="modal-trident">🔱</div>
-      <h2 id="modalTitle">Welcome Back</h2>
-      <p id="modalText">This front-end is a demonstration. No real-money transactions are enabled.</p>
-      <form id="demoForm">
-        <label>Email<input type="email" required placeholder="you@example.com" /></label>
-        <label>Password<input type="password" required minlength="6" placeholder="••••••••" /></label>
-        <button class="gold-btn full" type="submit">Continue</button>
-      </form>
-      <small id="formMessage"></small>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
